@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"gamepress-back-to-top": "Back to top &uarr;",
+	"gamepress-navigation": "* mainpage|mainpage-description\r\n** faqpage|faq\r\n** recentchanges-url|recentchanges",
+	"gamepress-prefooter-1": "",
+	"gamepress-prefooter-2": "",
+	"gamepress-prefooter-3": ""
+}
