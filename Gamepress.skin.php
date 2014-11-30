@@ -9,7 +9,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * @ingroup Skins
  */
 class SkinGamepress extends SkinTemplate {
-	var $skinname = 'gamepress', $stylename = 'gamepress',
+	public $skinname = 'gamepress', $stylename = 'gamepress',
 		$template = 'GamepressTemplate', $useHeadElement = true;
 
 	/**
@@ -19,7 +19,11 @@ class SkinGamepress extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 
 		// Load CSS via ResourceLoader
-		$out->addModuleStyles( 'skins.gamepress' );
+		$out->addModuleStyles( array(
+			'mediawiki.skinning.interface',
+			'mediawiki.skinning.content.externallinks',
+			'skins.gamepress'
+		) );
 
 		// CSS fixes for older Internet Explorers
 		$out->addStyle( 'Gamepress/resources/css/style_ie.css', 'screen', 'IE' );
@@ -227,7 +231,7 @@ class GamepressTemplate extends BaseTemplate {
 		}
 
 		echo '<span class="alignleft">';
-		
+
 		foreach ( $validFooterIcons as $blockName => $footerIcons ) { ?>
 	<div id="f-<?php echo htmlspecialchars( $blockName ); ?>ico">
 <?php
@@ -238,7 +242,7 @@ class GamepressTemplate extends BaseTemplate {
 	</div>
 <?php
 		}
-		
+
 
 		$i = 0;
 		$footerLen = count( $validFooterLinks );
@@ -345,7 +349,7 @@ class GamepressTemplate extends BaseTemplate {
 		foreach ( $this->getToolbox() as $key => $tbItem ) {
 			echo $this->makeListItem( $key, $tbItem );
 		}
-		wfRunHooks( 'MonoBookTemplateToolboxEnd', array( &$this ) );
+
 		wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this, true ) );
 ?>
 		</ul>

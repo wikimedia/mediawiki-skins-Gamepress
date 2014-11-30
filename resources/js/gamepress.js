@@ -76,17 +76,6 @@ jQuery( function( $ ) {
 	}
 
 	/**
-	 * Fix menu hover on IE < 7.0
-	 */
-	if ( $.browser.msie && $.browser.version.substr( 0, 1 ) < 7 ) {
-		/*$('li').has('ul').mouseover(function() {
-			$(this).children('ul').css('visibility', 'visible');
-		}).mouseout(function() {
-			$(this).children('ul').css('visibility', 'hidden');
-		})*/
-	};
-
-	/**
 	 * Fallback for browsers without CSS transitions
 	 */
 	if ( !Modernizr.csstransitions ) {
@@ -133,7 +122,15 @@ jQuery( function( $ ) {
 	/**
 	 * Fallback for browsers without content: css attribute
 	 */
-	if ( !Modernizr.generatedcontent || ( $.browser.msie && $.browser.version.substr( 0, 1 ) == '8' ) ) {
+	var ieVersion = 0;
+	var clientPC = navigator.userAgent.toLowerCase(); // Get client info
+	if ( /msie (\d+\.\d+);/.test( clientPC ) ) { // test for MSIE x.x;
+		ieVersion = ( new Number( RegExp.$1 ) ); // capture x.x portion and store as a number
+	}
+
+	if (
+		!Modernizr.generatedcontent ||
+		( /msie (\d+\.\d+);/.test( clientPC ) /* test for MSIE x.x */ && ieVersion == 8 ) ) {
 		$( '#primary-nav ul li:first-child > a, #primary-nav ul ul li:first-child > a' ).before( $( '<span/>' ).addClass( 'before' ) );
 		$( '.img-bevel' ).before( '<span class="before-img-bevel-fix"></span>' );
 	}

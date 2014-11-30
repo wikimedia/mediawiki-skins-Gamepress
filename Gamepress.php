@@ -6,7 +6,7 @@
  * @ingroup Skins
  * @author Aleksandra Łączek
  * @author Jack Phoenix <jack@countervandalism.net> -- MediaWiki port
- * @date 16 January 2014
+ * @date 30 November 2014
  * @see http://wordpress.org/themes/gamepress
  * @see http://wp-themes.com/gamepress/
  *
@@ -23,7 +23,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Gamepress',
-	'version' => '1.0.5',
+	'version' => '1.0.6',
 	'author' => array( '[http://webtuts.pl/themes/ Aleksandra Łączek]', 'Jack Phoenix' ),
 	'description' => 'Easy-to-use gaming-oriented skin',
 	'url' => 'https://www.mediawiki.org/wiki/Skin:Gamepress',
@@ -35,17 +35,13 @@ $wgExtensionCredits['skin'][] = array(
 // *this* file.
 $wgValidSkinNames['gamepress'] = 'Gamepress';
 
-// Autoload the skin class, make it a valid skin, set up i18n, set up CSS & JS
-// (via ResourceLoader)
+// Autoload the skin class, set up i18n, set up CSS & JS (via ResourceLoader)
 $wgAutoloadClasses['SkinGamepress'] = __DIR__ . '/Gamepress.skin.php';
 $wgMessagesDirs['SkinGamepress'] = __DIR__ . '/i18n';
+
 $wgResourceModules['skins.gamepress'] = array(
 	'styles' => array(
 		'skins/Gamepress/resources/css/reset.css' => array( 'media' => 'screen' ),
-		// MonoBook also loads these
-		'skins/common/commonElements.css' => array( 'media' => 'screen' ),
-		'skins/common/commonContent.css' => array( 'media' => 'screen' ),
-		'skins/common/commonInterface.css' => array( 'media' => 'screen' ),
 		// Styles custom to the Gamepress skin
 		'skins/Gamepress/resources/css/style.css' => array( 'media' => 'screen' ),
 		'skins/Gamepress/resources/css/dark.css' => array( 'media' => 'screen' )
