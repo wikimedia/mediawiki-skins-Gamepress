@@ -140,7 +140,7 @@ class GamepressTemplate extends BaseTemplate {
 						// reasons, so I just took it off [[for now]].
 						?>
 						<div class="entry-header">
-							<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><span dir="auto"><?php $this->html( 'title' ) ?></span></h1>
+							<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
 						</div>
 					</div>
 					<div class="entry-content mw-body">
