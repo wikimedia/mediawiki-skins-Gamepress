@@ -1,0 +1,65 @@
+{
+	"name": "Gamepress",
+	"version": "1.0.7",
+	"author": [
+		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Gamepress",
+	"description": "Easy-to-use gaming-oriented skin",
+	"type": "skin",
+	"ValidSkinNames": {
+		"gamepress": "Gamepress"
+	},
+	"MessagesDirs": {
+		"SkinGamepress": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SkinGamepress": "Gamepress.skin.php"
+	},
+	"ResourceModules": {
+		"skins.gamepress": {
+			"styles": {
+				"skins/Gamepress/resources/css/reset.css": {
+					"media": "screen"
+				},
+				"skins/Gamepress/resources/css/style.css": {
+					"media": "screen"
+				},
+				"skins/Gamepress/resources/css/dark.css": {
+					"media": "screen"
+				}
+			},
+			"scripts": [
+				"/skins/Gamepress/resources/js/jquery.easing.1.3.js",
+				"/skins/Gamepress/resources/js/modernizr-custom.js",
+				"/skins/Gamepress/resources/js/jquery.tools.min.js",
+				"/skins/Gamepress/resources/js/gamepress.js"
+			],
+			"position": "top"
+		},
+		"themeloader.skins.gamepress.blue": {
+			"styles": {
+				"skins/Gamepress/resources/images/blue/style.css": {
+					"media": "screen"
+				}
+			}
+		},
+		"themeloader.skins.gamepress.green": {
+			"styles": {
+				"skins/Gamepress/resources/images/green/style.css": {
+					"media": "screen"
+				}
+			}
+		},
+		"themeloader.skins.gamepress.orange": {
+			"styles": {
+				"skins/Gamepress/resources/images/orange/style.css": {
+					"media": "screen"
+				}
+			}
+		}
+	}
+}

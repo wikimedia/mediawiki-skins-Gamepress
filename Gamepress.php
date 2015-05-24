@@ -12,65 +12,18 @@
  *
  * To install, place the Gamepress folder (the folder containing this file!) into
  * skins/ and add this line to your wiki's LocalSettings.php:
- * require_once("$IP/skins/Gamepress/Gamepress.php");
+ * wfLoadSkin( 'Gamepress' );
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( 'Not a valid entry point.' );
+if ( function_exists( 'wfLoadSkin' ) ) {
+	wfLoadSkin( 'Gamepress' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['Gamepress'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for Gamepress skin. Please use wfLoadSkin instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the Gamepress skin requires MediaWiki 1.25+' );
 }
-
-// Skin credits that will show up on Special:Version
-$wgExtensionCredits['skin'][] = array(
-	'path' => __FILE__,
-	'name' => 'Gamepress',
-	'version' => '1.0.6',
-	'author' => array( '[http://webtuts.pl/themes/ Aleksandra Łączek]', 'Jack Phoenix' ),
-	'description' => 'Easy-to-use gaming-oriented skin',
-	'url' => 'https://www.mediawiki.org/wiki/Skin:Gamepress',
-);
-
-// The first instance must be strtolower()ed so that useskin=gamepress works and
-// so that it does *not* force an initial capital (i.e. we do NOT want
-// useskin=Gamepress) and the second instance is used to determine the name of
-// *this* file.
-$wgValidSkinNames['gamepress'] = 'Gamepress';
-
-// Autoload the skin class, set up i18n, set up CSS & JS (via ResourceLoader)
-$wgAutoloadClasses['SkinGamepress'] = __DIR__ . '/Gamepress.skin.php';
-$wgMessagesDirs['SkinGamepress'] = __DIR__ . '/i18n';
-
-$wgResourceModules['skins.gamepress'] = array(
-	'styles' => array(
-		'skins/Gamepress/resources/css/reset.css' => array( 'media' => 'screen' ),
-		// Styles custom to the Gamepress skin
-		'skins/Gamepress/resources/css/style.css' => array( 'media' => 'screen' ),
-		'skins/Gamepress/resources/css/dark.css' => array( 'media' => 'screen' )
-	),
-	'scripts' => array(
-		// gamepress.js depends on a fuckload of other stuff :-(
-		'/skins/Gamepress/resources/js/jquery.easing.1.3.js', // for the "Back to top" link
-		'/skins/Gamepress/resources/js/modernizr-custom.js',
-		'/skins/Gamepress/resources/js/jquery.tools.min.js',
-		'/skins/Gamepress/resources/js/gamepress.js'
-	),
-	'position' => 'top'
-);
-
-// Themes
-$wgResourceModules['themeloader.skins.gamepress.blue'] = array(
-	'styles' => array(
-		'skins/Gamepress/resources/images/blue/style.css' => array( 'media' => 'screen' ),
-	)
-);
-
-$wgResourceModules['themeloader.skins.gamepress.green'] = array(
-	'styles' => array(
-		'skins/Gamepress/resources/images/green/style.css' => array( 'media' => 'screen' ),
-	)
-);
-
-$wgResourceModules['themeloader.skins.gamepress.orange'] = array(
-	'styles' => array(
-		'skins/Gamepress/resources/images/orange/style.css' => array( 'media' => 'screen' ),
-	)
-);
