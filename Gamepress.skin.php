@@ -1,7 +1,13 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( -1 );
-}
+/**
+ * MediaWiki port of the WordPress theme Gamepress
+ *
+ * @file
+ * @author Aleksandra Łączek
+ * @author Jack Phoenix <jack@countervandalism.net> -- MediaWiki port
+ * @see http://wordpress.org/themes/gamepress
+ * @see http://wp-themes.com/gamepress/
+ */
 
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
@@ -432,8 +438,6 @@ class GamepressSkinNavigationService {
 	 * @return Array
 	 */
 	public function parseMessage( $messageName, $maxChildrenAtLevel = array(), $duration, $forContent = false ) {
-		wfProfileIn( __METHOD__ );
-
 		global $wgLang, $wgContLang, $wgMemc;
 
 		$this->forContent = $forContent;
@@ -458,7 +462,6 @@ class GamepressSkinNavigationService {
 			}
 		}
 
-		wfProfileOut( __METHOD__ );
 		return $nodes;
 	}
 
@@ -470,8 +473,6 @@ class GamepressSkinNavigationService {
 	 * @return Array
 	 */
 	private function parseLines( $lines, $maxChildrenAtLevel = array() ) {
-		wfProfileIn( __METHOD__ );
-
 		$nodes = array();
 
 		if ( is_array( $lines ) && count( $lines ) > 0 ) {
@@ -528,7 +529,6 @@ class GamepressSkinNavigationService {
 			}
 		}
 
-		wfProfileOut( __METHOD__ );
 		return $nodes;
 	}
 
@@ -537,8 +537,6 @@ class GamepressSkinNavigationService {
 	 * @return Array
 	 */
 	private function parseOneLine( $line ) {
-		wfProfileIn( __METHOD__ );
-
 		// trim spaces and asterisks from line and then split it to maximum two chunks
 		$lineArr = explode( '|', trim( $line, '* ' ), 2 );
 
@@ -578,7 +576,6 @@ class GamepressSkinNavigationService {
 			}
 		}
 
-		wfProfileOut( __METHOD__ );
 		return array(
 			'original' => $lineArr[0],
 			'text' => $text,

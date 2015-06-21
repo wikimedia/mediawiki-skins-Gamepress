@@ -6,6 +6,7 @@
 		"Jack Phoenix"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Gamepress",
+	"license-name": "GPL-2.0+",
 	"description": "Easy-to-use gaming-oriented skin",
 	"type": "skin",
 	"ValidSkinNames": {
@@ -17,7 +18,9 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinGamepress": "Gamepress.skin.php"
+		"SkinGamepress": "Gamepress.skin.php",
+		"GamepressTemplate": "Gamepress.skin.php",
+		"GamepressSkinNavigationService": "Gamepress.skin.php"
 	},
 	"ResourceModules": {
 		"skins.gamepress": {
