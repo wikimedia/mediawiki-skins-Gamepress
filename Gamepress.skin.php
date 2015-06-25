@@ -19,6 +19,17 @@ class SkinGamepress extends SkinTemplate {
 		$template = 'GamepressTemplate', $useHeadElement = true;
 
 	/**
+	 * Initializes OutputPage and sets up skin-specific parameters
+	 *
+	 * @param OutputPage $out
+	 */
+	public function initPage( OutputPage $out ) {
+		parent::initPage( $out );
+
+		$out->addMeta( 'viewport', 'width=device-width;' );
+	}
+
+	/**
 	 * @param $out OutputPage
 	 */
 	function setupSkinUserCss( OutputPage $out ) {
