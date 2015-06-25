@@ -1410,7 +1410,7 @@ ol.children {
 	padding-bottom: 36px;
 }
 #prefooter-inner {
-	width: 980px;
+	width: auto;
 	padding: 35px 0 0 0;
 	margin: 0 auto;
 	text-align: left;
@@ -1424,7 +1424,7 @@ ol.children {
 	height: 2px;
 }
 #footer-inner {
-	width: 980px;
+	width: auto;
 	padding: 0;
 	margin: 0 auto;
 	font-size: 11px;
