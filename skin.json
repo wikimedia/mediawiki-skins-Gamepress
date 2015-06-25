@@ -1,9 +1,10 @@
 {
 	"name": "Gamepress",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"author": [
 		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
-		"Jack Phoenix"
+		"Jack Phoenix",
+		"[http://en.uncyclopedia.co/wiki/User:Bizzeebeever Bizzeebeever]"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Gamepress",
 	"license-name": "GPL-2.0+",

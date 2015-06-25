@@ -134,6 +134,7 @@ class GamepressTemplate extends BaseTemplate {
 		<div id="content-inner">
 		<!-- CONTENT -->
 		<div id="content">
+			<div id="hilariously-bad-hack-for-responsiveness" style="height: 0; visibility: hidden;">You shouldn't even be seeing this. Bizzeebeever told me to add this here so that we can get responsiveness working for all screens.</div>
 			<section id="main-content" role="main">
 				<article class="post hentry list-big-thumb">
 					<div id="jump-to-nav" class="mw-jump"><?php $this->msg( 'jumpto' ) ?> <a href="#content"><?php $this->msg( 'jumptonavigation' ) ?></a><?php $this->msg( 'comma-separator' ) ?><a href="#searchInput"><?php $this->msg( 'jumptosearch' ) ?></a></div>

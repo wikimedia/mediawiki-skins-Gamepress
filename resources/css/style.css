@@ -513,13 +513,15 @@ textarea:focus, input:focus {
 #header {
 	text-align: center;
 	margin-bottom: 52px;
+	width: auto !important;
 }
 #header-inner {
-	width: 980px;
+	max-width: 980px !important;
 	padding: 35px 0 0 0;
 	margin: 0 auto;
 	text-align: left;
 	position: relative;
+	width: auto !important;
 }
 header #logo {
 	float: left;
@@ -824,13 +826,15 @@ header #logo p {
 	padding: 0 0 36px 0;
 }
 #content-inner {
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 	text-align: left;
+	width: auto !important;
 }
 #content {
 	float: left;
-	width: 642px;
+	max-width: 642px;
+	width: auto;
 }
 #content.full-width {
 	float: none;
