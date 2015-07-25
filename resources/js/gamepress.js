@@ -7,12 +7,6 @@ jQuery( function( $ ) {
 	$( '.accordion p:empty' ).remove();
 
 	/**
-	 * Adding placeholder support for input & textarea elements in older browsers
-	 */
-	// ashley 16 January 2014: not needed for MediaWiki
-	//$('input[placeholder], textarea[placeholder]').placeholder();
-
-	/**
 	 * Adding transparent wmode to YouTube iframe
 	 */
 	$( '.video-embed iframe' ).each( function() {
@@ -20,7 +14,7 @@ jQuery( function( $ ) {
 		if ( url.indexOf( '?' ) == -1 ) {
 			$( this ).attr( 'src', url + '?wmode=transparent' );
 		} else {
-			$( this ).attr("src",url+"&wmode=transparent");
+			$( this ).attr( 'src', url + '&wmode=transparent' );
 		}
 	} );
 
@@ -32,7 +26,7 @@ jQuery( function( $ ) {
 		return false;
 	} );
 
-    $( '.archive-content .video-item:odd' ).addClass( 'l' );
+	$( '.archive-content .video-item:odd' ).addClass( 'l' );
 
 	/**
 	 * Notifications
@@ -45,7 +39,7 @@ jQuery( function( $ ) {
 	 * Sliders
 	 */
 	if ( $( '#slider' ).not( '.thumbs' ).length > 0 ) {
-		$( '#slider' ).not( '.thumbs' ).nivoSlider({
+		$( '#slider' ).not( '.thumbs' ).nivoSlider( {
 			effect: 'random',
 			slices: 15,
 			boxCols: 8,
@@ -54,7 +48,7 @@ jQuery( function( $ ) {
 			pauseTime: 5000,
 			startSlide: 0,
 			directionNav: true,
-            manualAdvance: true,
+			manualAdvance: true,
 			controlNav: true,
 			controlNavThumbs: false,
 			keyboardNav: true,
@@ -63,7 +57,7 @@ jQuery( function( $ ) {
 		} );
 	}
 	if ( $( '#slider.thumbs' ).length > 0 ) {
-		$( '#slider.thumbs' ).nivoSlider({
+		$( '#slider.thumbs' ).nivoSlider( {
 			effect: 'random',
 			slices: 15,
 			boxCols: 8,
@@ -79,8 +73,6 @@ jQuery( function( $ ) {
 	 * Fallback for browsers without CSS transitions
 	 */
 	if ( !Modernizr.csstransitions ) {
-		var to1, to2;
-
 		/**
 		 * Main menu - second level
 		 */
@@ -88,12 +80,12 @@ jQuery( function( $ ) {
 		$( '#primary-nav ul' ).hide();
 
 		$( '#primary-nav > li' ).on( 'mouseover', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().show().css( 'visibility', 'visible' ).animate({
+			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().show().css( 'visibility', 'visible' ).animate( {
 				top: '38',
 				opacity: 1
 			}, 200, 'easeInOutSine' );
-		}).on( 'mouseout', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().animate({
+		} ).on( 'mouseout', function( e ) {
+			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().animate( {
 				top: '50',
 				opacity: 0
 			}, 200, 'easeInOutSine', function() {
@@ -105,15 +97,15 @@ jQuery( function( $ ) {
 		 * Main menu - 3rd level
 		 */
 		$( '#primary-nav > li > ul > li' ).on( 'mouseover', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().show().css( 'visibility', 'visible' ).animate({
+			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().show().css( 'visibility', 'visible' ).animate( {
 				left: '163',
 				opacity: 1
 			}, 200, 'easeInOutSine' );
-		}).on( 'mouseout', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().animate({
+		} ).on( 'mouseout', function( e ) {
+			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().animate( {
 				left: '173',
 				opacity: 0
-			}, 200, 'easeInOutSine', function(){
+			}, 200, 'easeInOutSine', function() {
 				$( e.delegateTarget ).find( '> ul' ).css( 'visibility', 'hidden' );
 			} );
 		} );
