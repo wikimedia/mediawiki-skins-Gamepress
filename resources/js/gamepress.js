@@ -70,6 +70,17 @@ jQuery( function( $ ) {
 	}
 
 	/**
+	 * Make the top menu usable on touchscreen devices so that it's possible to
+	 * open up a menu and tap on the sub-menu items
+	 */
+	$( '#primary-nav li.page_item_has_children > a' ).on( 'touchstart', function() {
+		$( this ).off( 'touchstart' ).on( 'click', function( e ) {
+			e.preventDefault();
+		} );
+		e.preventDefault();
+	} );
+
+	/**
 	 * Fallback for browsers without CSS transitions
 	 */
 	if ( !Modernizr.csstransitions ) {
