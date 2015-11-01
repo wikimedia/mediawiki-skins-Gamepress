@@ -150,6 +150,7 @@ class GamepressTemplate extends BaseTemplate {
 				<article class="post hentry list-big-thumb">
 					<div id="jump-to-nav" class="mw-jump"><?php $this->msg( 'jumpto' ) ?> <a href="#content"><?php $this->msg( 'jumptonavigation' ) ?></a><?php $this->msg( 'comma-separator' ) ?><a href="#searchInput"><?php $this->msg( 'jumptosearch' ) ?></a></div>
 					<div class="noimage">
+						<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 						<?php
 						// In WordPress, this displays the date when the blog
 						// post was published:
