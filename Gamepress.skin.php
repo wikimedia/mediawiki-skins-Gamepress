@@ -104,21 +104,21 @@ class GamepressTemplate extends BaseTemplate {
 								$hasChildren = isset( $menuNodes[$level0]['children'] );
 					?>
 					<li class="page_item<?php echo ( $hasChildren ? ' page_item_has_children' : '' ) ?>">
-						<a class="nav<?php echo $counter ?>_link" href="<?php echo $menuNodes[$level0]['href'] ?>"><?php echo $menuNodes[$level0]['text'] ?></a>
+						<a class="nav<?php echo $counter ?>_link" href="<?php echo htmlspecialchars( $menuNodes[$level0]['href'], ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $menuNodes[$level0]['text'], ENT_QUOTES ) ?></a>
 						<?php if ( $hasChildren ) { ?>
 						<ul class="children">
 <?php
 							foreach ( $menuNodes[$level0]['children'] as $level1 ) {
 ?>
 							<li class="page_item">
-								<a href="<?php echo $menuNodes[$level1]['href'] ?>"><?php echo $menuNodes[$level1]['text'] ?></a>
+								<a href="<?php echo htmlspecialchars( $menuNodes[$level1]['href'], ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $menuNodes[$level1]['text'], ENT_QUOTES ) ?></a>
 <?php
 								if ( isset( $menuNodes[$level1]['children'] ) ) {
 									echo '<ul class="children">';
 									foreach ( $menuNodes[$level1]['children'] as $level2 ) {
 ?>
 									<li class="page_item">
-										<a href="<?php echo $menuNodes[$level2]['href'] ?>"><?php echo $menuNodes[$level2]['text'] ?></a>
+										<a href="<?php echo htmlspecialchars( $menuNodes[$level2]['href'], ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $menuNodes[$level2]['text'], ENT_QUOTES ) ?></a>
 									</li>
 <?php
 									}
