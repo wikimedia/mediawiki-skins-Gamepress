@@ -1,15 +1,11 @@
-/*
+/**
+ * Theme Name: Evolved
+ * Description: Evoved - Gaming HTML Template
+ * Author: sunaprticle (http://themeforest.net/user/sunparticle)
+ * Author URI: http://webtuts.pl
+ */
 
-	Theme Name: Evolved
-	Description: Evoved - Gaming HTML Template
-	Author: sunaprticle (http://themeforest.net/user/sunparticle)
-	Author URI: http://webtuts.pl
-
-*/
-
-/*-----------------------------------------------------------------------------------*/
-/*	IE-specific workarounds
-/*-----------------------------------------------------------------------------------*/
+/* IE specific workarounds */
 #header {
 	position: relative;
 	z-index: 20;
@@ -37,10 +33,9 @@
 
 #primary-nav ul {
 	width: auto;
-	filter: alpha(opacity=0); /* IE 7 and Earlier */
-    /* Next 2 lines IE8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	/* IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 
 #primary-nav ul li{
@@ -63,8 +58,4 @@
 	float: left;
 	margin: 0;
 	width: auto;
-}
-
-.before-img-bevel-fix {
-	filter: alpha(opacity=20); /* IE 7 and Earlier */
 }
