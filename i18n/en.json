@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"gamepress-desc": "Easy-to-use gaming-oriented skin",
 	"gamepress-back-to-top": "Back to top &uarr;",
 	"gamepress-navigation": "* mainpage|mainpage-description\n\n** faqpage|faq\n\n** recentchanges-url|recentchanges",
 	"gamepress-prefooter-1": "",

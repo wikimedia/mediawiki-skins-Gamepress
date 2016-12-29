@@ -1,6 +1,6 @@
 {
 	"name": "Gamepress",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"author": [
 		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
 		"Jack Phoenix",
@@ -8,7 +8,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Gamepress",
 	"license-name": "GPL-2.0+",
-	"description": "Easy-to-use gaming-oriented skin",
+	"descriptionmsg": "gamepress-desc",
 	"type": "skin",
 	"ValidSkinNames": {
 		"gamepress": "Gamepress"
