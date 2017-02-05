@@ -80,7 +80,7 @@ class GamepressTemplate extends BaseTemplate {
 					'href' => $this->data['nav_urls']['mainpage']['href'], 'rel' => 'home' )
 					+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' ), $wgSitename ); ?></h1><?php echo $tagline ?>
 			</div>
-			<div class="clear"></div>
+			<div class="visualClear"></div>
 			<nav class="nosearch noprint">
 				<ul class="nav" id="primary-nav">
 					<?php
@@ -192,7 +192,7 @@ class GamepressTemplate extends BaseTemplate {
 		?>
 		</aside>
 		<!-- END SIDEBAR -->
-		<div class="clear"></div>
+		<div class="visualClear"></div>
 		</div><!-- END #CONTENT-INNER -->
 	</div><!-- END #CONTENT-WRAPPER -->
 	<?php
