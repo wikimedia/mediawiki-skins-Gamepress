@@ -1,6 +1,6 @@
 {
 	"name": "Gamepress",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": [
 		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
 		"Jack Phoenix",
@@ -44,9 +44,6 @@
 				}
 			},
 			"scripts": [
-				"resources/js/jquery.easing.1.3.js",
-				"resources/js/modernizr-custom.js",
-				"resources/js/jquery.tools.min.js",
 				"resources/js/gamepress.js"
 			],
 			"position": "top"

@@ -93,24 +93,6 @@ article a, a.more {	color: #1d69fd; }
 	border-bottom-color: #182d5b;
 }
 
-/* Date background */
-article.list-small-thumb .entry-date, article.list-big-thumb .entry-date{
-	/* @embed */
-	background: url("date-bg.png") repeat-x 0 0;
-}
-
-/* Pagination */
-.wp-pagenavi .current, .wp-pagenavi a:hover {
-	background: #1C5EA0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#1C5EA0), to(#064792));
-	background: -webkit-linear-gradient(top, #1C5EA0, #064792);
-	background: -moz-linear-gradient(top, #1C5EA0, #064792);
-	background: -ms-linear-gradient(top, #1C5EA0, #064792);
-	background: -o-linear-gradient(top, #1C5EA0, #064792);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1C5EA0, endColorstr=#064792)";
-	background: linear-gradient(top, #1C5EA0, #064792);
-}
-
 /* Form */
 input[type="submit"] {
 	border: 1px solid #064792 !important;
