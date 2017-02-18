@@ -1,0 +1,9 @@
+{
+	"@metadata": {},
+	"gamepress-desc": "{{desc|what=skin|name=Gamepress|url=https://www.mediawiki.org/wiki/Skin:Gamepress}}",
+	"gamepress-back-to-top": "Text for a link in the footer of each page\n{{Identical|Back}}",
+	"gamepress-navigation": "{{ignored}}",
+	"gamepress-prefooter-1": "{{ignored}}",
+	"gamepress-prefooter-2": "{{ignored}}",
+	"gamepress-prefooter-3": "{{ignored}}"
+}
