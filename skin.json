@@ -1,6 +1,6 @@
 {
 	"name": "Gamepress",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"author": [
 		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
 		"Jack Phoenix",
@@ -68,6 +68,11 @@
 					"media": "screen"
 				}
 			}
+		}
+	},
+	"ResourceModuleSkinStyles": {
+		"gamepress": {
+			"+mediawiki.special.preferences": "resources/css/special.preferences.css"
 		}
 	},
 	"manifest_version": 1
