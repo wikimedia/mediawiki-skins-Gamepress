@@ -174,8 +174,6 @@ td, th {
 /* 03.	Forms & Buttons
 /*-----------------------------------------------------------------------------------*/
 input, textarea, select {
-	-webkit-border-radius: 2px 2px 2px 2px;
-	-moz-border-radius: 2px 2px 2px 2px;
 	border-radius: 2px 2px 2px 2px;
 	padding: 5px;
 	margin: 0 5px 0 0;
@@ -194,17 +192,6 @@ textarea:focus, input:focus {
 	border-left-color:rgba(0,0,0,.5);
 	border-right-color:rgba(0,0,0,.5);
 	border:1px solid #000;
-	-webkit-box-shadow:
-		inset 0px 1px 0px rgba(255,255,255,.15),
-		0px 1px 2px rgba(0,0,0,.5);
-	-moz-box-shadow:
-		inset 0px 1px 0px rgba(255,255,255,.15),
-		0px 1px 2px rgba(0,0,0,.5);
-	box-shadow:
-		inset 0px 1px 0px rgba(255,255,255,.15),
-		0px 1px 2px rgba(0,0,0,.5);
-	-webkit-border-radius:4px;
-	-moz-border-radius:4px;
 	border-radius:4px;
 	margin: 0;
 	padding: 6px 10px 5px;
@@ -392,11 +379,7 @@ header #logo p {
 	background: -o-linear-gradient(#C32420,#8F050E);
 	background: -ms-linear-gradient(top, #C32420 0%,#8F050E 100%);
 	background: linear-gradient(#C32420,#8F050E);
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	-moz-box-shadow: 0 2px 10px rgba(0,0,0,0.35);
-	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.35);
 	box-shadow: 0 2px 10px rgba(0,0,0,0.35);
 	display: block;
 }
@@ -497,11 +480,7 @@ header #logo p {
 }
 
 #primary-nav ul > li:first-child {
-	-moz-box-shadow: 0 -1px #AC1417;
-	-webkit-box-shadow: 0 -1px 0 #AC1417;
 	box-shadow: 0 -1px 0 #AC1417;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -563,8 +542,6 @@ header #logo p {
 }
 
 #primary-nav ul li:first-child > a {
-	-moz-border-radius: 3px 3px 0 0;
-	-webkit-border-radius: 3px 3px 0 0;
 	border-radius: 3px 3px 0 0;
 }
 
@@ -603,8 +580,6 @@ header #logo p {
 }
 
 #primary-nav ul li:last-child > a {
-	-moz-border-radius: 0 0 3px 3px;
-	-webkit-border-radius: 0 0 3px 3px;
 	border-radius: 0 0 3px 3px;
 }
 

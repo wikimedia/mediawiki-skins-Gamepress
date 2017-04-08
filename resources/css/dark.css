@@ -22,8 +22,6 @@ table {
 table thead th{
 	color: #E9E9E9;
 	border: solid 1px #000000;
-	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,.15);
-	-moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,.15);
 	box-shadow: inset 0px 1px 0px rgba(255,255,255,.15);
 	background: #1a1a1a;
 	background: -moz-linear-gradient(top, #1a1a1a 0%, #0d0e0f 100%);
@@ -45,8 +43,6 @@ table th, table tbody td {
 input, textarea, select {
 	background: none repeat scroll 0 0 #FAFAFE;
 	border: 1px solid #E2E2E6;
-	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
-	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
 	color: #7e7e7e;
 }
@@ -57,12 +53,6 @@ input, textarea, select {
 	border-left-color: rgba(0,0,0,.5);
 	border-right-color: rgba(0,0,0,.5);
 	border: 1px solid #000;
-	-webkit-box-shadow:
-		inset 0px 1px 0px rgba(255,255,255,.15),
-		0px 1px 2px rgba(0,0,0,.5);
-	-moz-box-shadow:
-		inset 0px 1px 0px rgba(255,255,255,.15),
-		0px 1px 2px rgba(0,0,0,.5);
 	box-shadow:
 		inset 0px 1px 0px rgba(255,255,255,.15),
 		0px 1px 2px rgba(0,0,0,.5);
