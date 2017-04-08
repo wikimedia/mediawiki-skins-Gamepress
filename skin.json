@@ -1,10 +1,11 @@
 {
 	"name": "Gamepress",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"author": [
 		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
 		"Jack Phoenix",
-		"[http://en.uncyclopedia.co/wiki/User:Bizzeebeever Bizzeebeever]"
+		"[http://en.uncyclopedia.co/wiki/User:Bizzeebeever Bizzeebeever]",
+		"Samantha Nguyen"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Gamepress",
 	"license-name": "GPL-2.0+",
@@ -72,7 +73,7 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"gamepress": {
-			"+mediawiki.special.preferences": "resources/css/special.preferences.css"
+			"+mediawiki.special.preferences.styles": "resources/css/special.preferences.styles.css"
 		}
 	},
 	"manifest_version": 1
