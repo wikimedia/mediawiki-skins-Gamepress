@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"烈羽"
+			"烈羽",
+			"Wehwei"
 		]
 	},
+	"gamepress-desc": "易於遊戲導向的屏膚",
 	"gamepress-back-to-top": "回到頂端&uarr;"
 }
