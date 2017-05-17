@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nitch"
+			"Nitch",
+			"Facenapalm"
 		]
 	},
+	"gamepress-desc": "Легкоиспользуемая ориентированная на игры тема",
 	"gamepress-back-to-top": "Вернуться к началу &uarr;"
 }
