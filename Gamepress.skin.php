@@ -162,7 +162,7 @@ class GamepressTemplate extends BaseTemplate {
 							<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
 						</div>
 					</div>
-					<div class="entry-content mw-body">
+					<div class="entry-content mw-body-content">
 						<?php if ( $this->data['undelete'] ) { ?><div id="contentSub2"><?php $this->html( 'undelete' ) ?></div><?php } ?>
 						<?php if ( $this->data['newtalk'] ) { ?><div class="usermessage"><?php $this->html( 'newtalk' ) ?></div><?php } ?>
 						<!-- start content -->
