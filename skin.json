@@ -1,6 +1,6 @@
 {
 	"name": "Gamepress",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"author": [
 		"[http://webtuts.pl/themes/ Aleksandra Łączek]",
 		"Jack Phoenix",
@@ -23,9 +23,9 @@
 		"gamepress": [ "blue", "green", "orange" ]
 	},
 	"AutoloadClasses": {
-		"SkinGamepress": "Gamepress.skin.php",
-		"GamepressTemplate": "Gamepress.skin.php",
-		"GamepressSkinNavigationService": "Gamepress.skin.php"
+		"SkinGamepress": "includes/SkinGamepress.php",
+		"GamepressTemplate": "includes/GamepressTemplate.php",
+		"GamepressSkinNavigationService": "includes/GamepressSkinNavigationService.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
