@@ -4,7 +4,7 @@
  *
  * @file
  * @author Aleksandra Łączek
- * @author Jack Phoenix <jack@countervandalism.net> -- MediaWiki port
+ * @author Jack Phoenix -- MediaWiki port
  * @see http://wordpress.org/themes/gamepress
  * @see http://wp-themes.com/gamepress/
  */
