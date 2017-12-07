@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
-	"gamepress-desc": "Habillage orienté jeu, facile à utiliser",
+	"gamepress-desc": "Habillage orienté pour les jeux, facile à utiliser",
 	"gamepress-back-to-top": "Retour au début &uarr;"
 }
