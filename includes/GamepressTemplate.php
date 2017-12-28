@@ -328,7 +328,9 @@ class GamepressTemplate extends BaseTemplate {
 			echo $this->makeListItem( $key, $tbItem );
 		}
 
-		Hooks::run( 'SkinTemplateToolboxEnd', array( &$this, true ) );
+		// Avoid PHP 7.1 warning of passing $this by reference
+		$template = $this;
+		Hooks::run( 'SkinTemplateToolboxEnd', array( &$template, true ) );
 ?>
 		</ul>
 	</div>
