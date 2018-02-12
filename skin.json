@@ -49,8 +49,7 @@
 			},
 			"scripts": [
 				"resources/js/gamepress.js"
-			],
-			"position": "top"
+			]
 		},
 		"themeloader.skins.gamepress.blue": {
 			"styles": {
