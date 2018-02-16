@@ -8,7 +8,7 @@
 		"Samantha Nguyen"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Gamepress",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"descriptionmsg": "gamepress-desc",
 	"type": "skin",
 	"ValidSkinNames": {
