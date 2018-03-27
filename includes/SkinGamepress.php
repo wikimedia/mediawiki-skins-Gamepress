@@ -7,7 +7,7 @@
  */
 class SkinGamepress extends SkinTemplate {
 	public $skinname = 'gamepress', $stylename = 'gamepress',
-		$template = 'GamepressTemplate', $useHeadElement = true;
+		$template = 'GamepressTemplate';
 
 	/**
 	 * Initializes OutputPage and sets up skin-specific parameters
