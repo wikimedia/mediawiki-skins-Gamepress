@@ -18,6 +18,7 @@ class SkinGamepress extends SkinTemplate {
 		parent::initPage( $out );
 
 		$out->addMeta( 'viewport', 'width=device-width;' );
+		$out->addModules( 'skins.gamepress.site' );
 	}
 
 	/**
@@ -30,13 +31,10 @@ class SkinGamepress extends SkinTemplate {
 		$out->addModuleStyles( array(
 			'mediawiki.skinning.interface',
 			'mediawiki.skinning.content.externallinks',
-			'skins.gamepress'
+			'skins.gamepress.styles'
 		) );
 
 		// CSS fixes for older Internet Explorers
 		$out->addStyle( 'Gamepress/resources/css/style_ie.css', 'screen', 'IE' );
-
-		// And JS too!
-		$out->addModuleScripts( 'skins.gamepress' );
 	}
 }
