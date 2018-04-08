@@ -32,7 +32,7 @@
 		"remoteSkinPath": "Gamepress"
 	},
 	"ResourceModules": {
-		"skins.gamepress": {
+		"skins.gamepress.styles": {
 			"styles": {
 				"resources/css/reset.css": {
 					"media": "screen"
@@ -47,10 +47,12 @@
 					"media": "screen and (max-width: 750px)"
 				}
 			},
+			"position": "top"
+		},
+		"skins.gamepress.site": {
 			"scripts": [
 				"resources/js/gamepress.js"
-			],
-			"position": "top"
+			]
 		},
 		"themeloader.skins.gamepress.blue": {
 			"styles": {
