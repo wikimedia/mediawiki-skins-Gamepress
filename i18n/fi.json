@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jack Phoenix"
+			"Jack Phoenix",
+			"Pyscowicz"
 		]
 	},
+	"gamepress-desc": "Helppokäyttöinen pelaamiseen suuntautunut tyyli",
 	"gamepress-back-to-top": "Palaa alkuun &uarr;"
 }
