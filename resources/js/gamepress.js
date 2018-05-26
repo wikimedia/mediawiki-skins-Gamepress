@@ -17,46 +17,4 @@ jQuery( function( $ ) {
 		} );
 		e.preventDefault();
 	} );
-
-	/**
-	 * Fallback for browsers without CSS transitions
-	 */
-	if ( !Modernizr.csstransitions ) {
-		/**
-		 * Main menu - second level
-		 */
-		$( '#primary-nav ul' ).css( 'visibility', 'hidden' );
-		$( '#primary-nav ul' ).hide();
-
-		$( '#primary-nav > li' ).on( 'mouseover', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().show().css( 'visibility', 'visible' ).animate( {
-				top: '38',
-				opacity: 1
-			}, 200, 'easeInOutSine' );
-		} ).on( 'mouseout', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().animate( {
-				top: '50',
-				opacity: 0
-			}, 200, 'easeInOutSine', function() {
-				$( e.delegateTarget ).find( '> ul' ).css( 'visibility', 'hidden' );
-			} );
-		} );
-
-		/**
-		 * Main menu - 3rd level
-		 */
-		$( '#primary-nav > li > ul > li' ).on( 'mouseover', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().show().css( 'visibility', 'visible' ).animate( {
-				left: '163',
-				opacity: 1
-			}, 200, 'easeInOutSine' );
-		} ).on( 'mouseout', function( e ) {
-			$( e.delegateTarget ).find( '> ul' ).stop().clearQueue().animate( {
-				left: '173',
-				opacity: 0
-			}, 200, 'easeInOutSine', function() {
-				$( e.delegateTarget ).find( '> ul' ).css( 'visibility', 'hidden' );
-			} );
-		} );
-	};
 } );
