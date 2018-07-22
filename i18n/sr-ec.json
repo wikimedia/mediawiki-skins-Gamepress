@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Obsuser"
+			"Obsuser",
+			"BadDog"
 		]
 	},
-	"gamepress-desc": "Скин за гејмере, лак за употребу",
+	"gamepress-desc": "Тема за гејмере, лака за употребу",
 	"gamepress-back-to-top": "Назад на врх &uarr;"
 }
