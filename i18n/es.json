@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Yllelder"
 		]
 	},
-	"gamepress-desc": "Apariencia orientada a juegos fácil de utilizar",
-	"gamepress-back-to-top": "Volver al principio &uarr;"
+	"gamepress-desc": "Un skin fácil de usar orientado a los juegos",
+	"gamepress-back-to-top": "Volver arriba &uarr;"
 }
