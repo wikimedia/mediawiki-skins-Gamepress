@@ -35,8 +35,8 @@ class GamepressTemplate extends BaseTemplate {
 	<header id="header">
 		<div id="header-inner">
 			<div id="logo">
-				<h1 id="site-title"><?php echo Html::element( 'a', array(
-					'href' => $this->data['nav_urls']['mainpage']['href'], 'rel' => 'home' )
+				<h1 id="site-title"><?php echo Html::element( 'a', [
+					'href' => $this->data['nav_urls']['mainpage']['href'], 'rel' => 'home' ]
 					+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' ), $wgSitename ); ?></h1><?php echo $tagline ?>
 			</div>
 			<div class="visualClear"></div>
@@ -53,7 +53,7 @@ class GamepressTemplate extends BaseTemplate {
 						$service = new GamepressSkinNavigationService();
 						$menuNodes = $service->parseMessage(
 							'gamepress-navigation',
-							array( 10, 10, 10, 10, 10, 10 ),
+							[ 10, 10, 10, 10, 10, 10 ],
 							60 * 60 * 3 // 3 hours
 						);
 
@@ -288,11 +288,11 @@ class GamepressTemplate extends BaseTemplate {
 			<form role="search" method="get" id="searchform" class="searchform" action="<?php $this->text( 'wgScript' ) ?>">
 				<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 				<?php
-					echo $this->makeSearchInput( array( 'id' => 'searchInput' ) );
-					echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) );
+					echo $this->makeSearchInput( [ 'id' => 'searchInput' ] );
+					echo $this->makeSearchButton( 'go', [ 'id' => 'searchGoButton', 'class' => 'searchButton' ] );
 					if ( $wgUseTwoButtonsSearchForm ) {
 						echo '&#160;';
-						echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton' ) );
+						echo $this->makeSearchButton( 'fulltext', [ 'id' => 'mw-searchButton', 'class' => 'searchButton' ] );
 					} else { ?>
 						<div><a href="<?php $this->text( 'searchaction' ) ?>" rel="search"><?php $this->msg( 'powersearch-legend' ) ?></a></div><?php
 					} ?>
@@ -330,7 +330,7 @@ class GamepressTemplate extends BaseTemplate {
 
 		// Avoid PHP 7.1 warning of passing $this by reference
 		$template = $this;
-		Hooks::run( 'SkinTemplateToolboxEnd', array( &$template, true ) );
+		Hooks::run( 'SkinTemplateToolboxEnd', [ &$template, true ] );
 ?>
 		</ul>
 	</div>
@@ -356,15 +356,15 @@ class GamepressTemplate extends BaseTemplate {
 	/**
 	 * Render a sidebar box from user-supplied data (a portion of MediaWiki:Sidebar)
 	 *
-	 * @param $bar string
-	 * @param $cont array|string
+	 * @param string $bar
+	 * @param array|string $cont
 	 */
 	function customBox( $bar, $cont ) {
-		$portletAttribs = array(
+		$portletAttribs = [
 			'class' => 'generated-sidebar widget',
-			'id' => Sanitizer::escapeId( "p-$bar" ),
+			'id' => Sanitizer::escapeIdForAttribute( "p-$bar" ),
 			'role' => 'navigation'
-		);
+		];
 		$tooltip = Linker::titleAttrib( "p-$bar" );
 		if ( $tooltip !== false ) {
 			$portletAttribs['title'] = $tooltip;

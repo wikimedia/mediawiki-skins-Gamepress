@@ -28,11 +28,11 @@ class SkinGamepress extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 
 		// Load CSS via ResourceLoader
-		$out->addModuleStyles( array(
+		$out->addModuleStyles( [
 			'mediawiki.skinning.interface',
 			'mediawiki.skinning.content.externallinks',
 			'skins.gamepress.styles'
-		) );
+		] );
 
 		// CSS fixes for older Internet Explorers
 		$out->addStyle( 'Gamepress/resources/css/style_ie.css', 'screen', 'IE' );
