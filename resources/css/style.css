@@ -868,6 +868,19 @@ h1#site-title {
 	border-bottom: none;
 }
 
+/* Copy of mixin-screen-reader-text() LESS mixin from /resources/src/mediawiki.less/mediawiki.mixins.less@REL1_32 */
+.mw-jump-link:not( :focus ) {
+	display: block;
+	position: absolute !important; /* stylelint-disable-line declaration-no-important */
+	clip: rect( 1px, 1px, 1px, 1px );
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 /* Turn the "Back to top" link into UPPERCASE via CSS so that we don't need to make changes to the source i18n messages */
 a.scrollup {
 	text-transform: uppercase;
