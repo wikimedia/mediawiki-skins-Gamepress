@@ -5,5 +5,7 @@
 		]
 	},
 	"gamepress-desc": "برنامج مساعد سهل في استخدام الألعاب الموجهة",
-	"gamepress-back-to-top": "الرجوع إلى أعلى &uarr;"
+	"gamepress-back-to-top": "الرجوع إلى أعلى &uarr;",
+	"gamepress-jump-to-navigation": "اذهب إلى التصفح",
+	"gamepress-jump-to-search": "اذهب إلى البحث"
 }
