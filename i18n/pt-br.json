@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"gamepress-desc": "Tema fácil de usar orientado para jogos",
-	"gamepress-back-to-top": "Voltar ao topo &uarr;"
+	"gamepress-back-to-top": "Voltar ao topo &uarr;",
+	"gamepress-jump-to-navigation": "Ir para navegação",
+	"gamepress-jump-to-search": "Ir para pesquisar"
 }
