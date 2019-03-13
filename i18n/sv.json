@@ -5,5 +5,7 @@
 		]
 	},
 	"gamepress-desc": "Lättanvänt spelorienterat utseende",
-	"gamepress-back-to-top": "Gå längst upp &uarr;"
+	"gamepress-back-to-top": "Gå längst upp &uarr;",
+	"gamepress-jump-to-navigation": "Hoppa till navigering",
+	"gamepress-jump-to-search": "Hoppa till sök"
 }

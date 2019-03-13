@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Piramidion"
+			"Piramidion",
+			"Vlad5250"
 		]
 	},
 	"gamepress-desc": "Проста у використанні тема оформлення, орієнтована на ігрову тематику",
-	"gamepress-back-to-top": "Повернутись на початок &uarr;"
+	"gamepress-back-to-top": "Повернутись на початок &uarr;",
+	"gamepress-jump-to-navigation": "Перейти до навігації",
+	"gamepress-jump-to-search": "Перейти до пошуку"
 }
