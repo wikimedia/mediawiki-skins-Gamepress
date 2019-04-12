@@ -6,5 +6,7 @@
 		]
 	},
 	"gamepress-desc": "Helppokäyttöinen pelaamiseen suuntautunut tyyli",
-	"gamepress-back-to-top": "Palaa alkuun &uarr;"
+	"gamepress-back-to-top": "Palaa alkuun &uarr;",
+	"gamepress-jump-to-navigation": "Siirry navigaatioon",
+	"gamepress-jump-to-search": "Siirry hakuun"
 }
