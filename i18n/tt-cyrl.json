@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ильнар"
+			"Ильнар",
+			"Ерней"
 		]
 	},
-	"gamepress-back-to-top": "Башламга кайту &uarr;"
+	"gamepress-back-to-top": "Башламга кайту &uarr;",
+	"gamepress-jump-to-navigation": "Навигациягә күчү",
+	"gamepress-jump-to-search": "Эзләүгә күчү"
 }
