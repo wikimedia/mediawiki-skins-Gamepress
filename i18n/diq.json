@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"1917 Ekim Devrimi",
 			"Mirzali"
 		]
 	},
+	"gamepress-back-to-top": "Ravêr serani &uarr;",
 	"gamepress-jump-to-navigation": "Xıl de pusula",
 	"gamepress-jump-to-search": "Xıl de cıgeyrayışi"
 }
