@@ -881,6 +881,18 @@ h1#site-title {
 	overflow: hidden;
 }
 
+/* [[mw:Help:Page status indicators]]; styles copied from MonoBook */
+.mw-indicators {
+	float: right;
+	line-height: 1.5em;
+	font-size: 95%;
+}
+
+.mw-indicator {
+	display: -moz-inline-block;
+	display: inline-block;
+}
+
 /* Turn the "Back to top" link into UPPERCASE via CSS so that we don't need to make changes to the source i18n messages */
 a.scrollup {
 	text-transform: uppercase;

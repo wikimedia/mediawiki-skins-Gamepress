@@ -119,6 +119,7 @@ class GamepressTemplate extends BaseTemplate {
 						// For MediaWiki, it doesn't really work for various
 						// reasons, so I just took it off [[for now]].
 						?>
+						<?php echo $this->getIndicators(); ?>
 						<div class="entry-header">
 							<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
 						</div>
