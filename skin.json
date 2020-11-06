@@ -15,7 +15,22 @@
 		"MediaWiki": ">= 1.34.0"
 	},
 	"ValidSkinNames": {
-		"gamepress": "Gamepress"
+		"gamepress": {
+			"class": "SkinGamepress",
+			"args": [
+				{
+					"name": "gamepress",
+					"template": "GamepressTemplate",
+					"responsive": true,
+					"styles": [
+						"skins.gamepress.site",
+						"mediawiki.skinning.interface",
+						"mediawiki.skinning.content.externallinks",
+						"skins.gamepress.styles"
+					]
+				}
+			]
+		}
 	},
 	"MessagesDirs": {
 		"SkinGamepress": [
