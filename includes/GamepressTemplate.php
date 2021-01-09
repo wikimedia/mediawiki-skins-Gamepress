@@ -323,7 +323,8 @@ class GamepressTemplate extends BaseTemplate {
 		<h3 class="widget-title"><?php $this->msg( 'toolbox' ) ?></h3>
 		<ul>
 <?php
-		foreach ( $this->getToolbox() as $key => $tbItem ) {
+		$toolbox = $this->get( 'sidebar' )['TOOLBOX'];
+		foreach ( $toolbox as $key => $tbItem ) {
 			echo $this->makeListItem( $key, $tbItem );
 		}
 
