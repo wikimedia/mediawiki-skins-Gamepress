@@ -93,10 +93,5 @@
 			}
 		}
 	},
-	"ResourceModuleSkinStyles": {
-		"gamepress": {
-			"+mediawiki.special.preferences.styles": "resources/css/special.preferences.styles.css"
-		}
-	},
 	"manifest_version": 1
 }
