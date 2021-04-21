@@ -63,6 +63,9 @@
 				},
 				"resources/css/mobile.css": {
 					"media": "screen and (max-width: 750px)"
+				},
+				"resources/css/print.css": {
+					"media": "print"
 				}
 			}
 		},
