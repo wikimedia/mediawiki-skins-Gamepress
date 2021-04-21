@@ -904,6 +904,7 @@ legend {
 }
 
 /* The text shadow is sometimes useful and nifty, but on some places it's bloody annoying, so remove it from:
+ * -the table of contents
  * -any and all special pages
  * -search suggestions
  * -"you have (a new message|new messages)" bar
@@ -912,6 +913,7 @@ legend {
  * -SocialProfile's empty containers on (your own) profile page
  * -SocialProfile's "use (wiki|social) user page" button on your own profile page
  */
+.toc,
 body.ns--1 article,
 div.suggestions,
 div.usermessage,
