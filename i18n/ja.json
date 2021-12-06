@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"Yusuke1109"
 		]
 	},
 	"gamepress-desc": "使いやすく設計された、ゲーム志向の外装",
-	"gamepress-back-to-top": "トップへ戻る &uarr;"
+	"gamepress-back-to-top": "トップへ戻る &uarr;",
+	"gamepress-jump-to-navigation": "ナビゲーションに移動",
+	"gamepress-jump-to-search": "検索に移動"
 }
