@@ -12,7 +12,7 @@
 	"descriptionmsg": "gamepress-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"ValidSkinNames": {
 		"gamepress": {
@@ -23,10 +23,10 @@
 					"template": "GamepressTemplate",
 					"responsive": true,
 					"styles": [
-						"skins.gamepress.site",
-						"mediawiki.skinning.interface",
-						"mediawiki.skinning.content.externallinks",
 						"skins.gamepress.styles"
+					],
+					"scripts": [
+						"skins.gamepress.site"
 					]
 				}
 			]
@@ -51,6 +51,22 @@
 	},
 	"ResourceModules": {
 		"skins.gamepress.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"content-media": true,
+				"content-thumbnails": true,
+				"content-links": true,
+				"content-links-external": true,
+				"content-tables": true,
+				"elements": true,
+				"i18n-ordered-lists": true,
+				"i18n-all-lists-margins": true,
+				"i18n-headings": true,
+				"interface": true,
+				"interface-message-box": true,
+				"interface-category": true,
+				"logo": true
+			},
 			"styles": {
 				"resources/css/reset.css": {
 					"media": "screen"
