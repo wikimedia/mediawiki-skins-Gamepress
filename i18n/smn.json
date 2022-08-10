@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
+	"gamepress-back-to-top": "Maassâd pajas &uarr;",
 	"gamepress-jump-to-navigation": "Njuškii navigistmân",
 	"gamepress-jump-to-search": "Njuškii ucâmân"
 }
