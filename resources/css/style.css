@@ -1005,3 +1005,7 @@ p.profile-update-unit {
 div.profile-tab {
 	margin-bottom: 5px;
 }
+
+.visualClear {
+	clear: both;
+}

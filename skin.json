@@ -17,10 +17,11 @@
 	},
 	"ValidSkinNames": {
 		"gamepress": {
-			"class": "SkinGamepress",
+			"class": "SkinTemplate",
 			"args": [
 				{
 					"name": "gamepress",
+					"bodyOnly": true,
 					"template": "GamepressTemplate",
 					"responsive": true,
 					"styles": [
@@ -42,7 +43,6 @@
 		"gamepress": [ "blue", "green", "orange" ]
 	},
 	"AutoloadClasses": {
-		"SkinGamepress": "includes/SkinGamepress.php",
 		"GamepressTemplate": "includes/GamepressTemplate.php",
 		"GamepressSkinNavigationService": "includes/GamepressSkinNavigationService.php"
 	},
@@ -55,7 +55,6 @@
 			"class": "ResourceLoaderSkinModule",
 			"features": {
 				"content-media": true,
-				"content-thumbnails": true,
 				"content-links": true,
 				"content-links-external": true,
 				"content-tables": true,
