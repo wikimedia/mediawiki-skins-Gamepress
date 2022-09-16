@@ -19,7 +19,7 @@ class GamepressSkinNavigationService {
 	 *								the wiki's content language (true) or not?
 	 * @return array
 	 */
-	public function parseMessage( $messageName, $maxChildrenAtLevel = [], $duration, $forContent = false ) {
+	public function parseMessage( $messageName, $duration, $maxChildrenAtLevel = [], $forContent = false ) {
 		global $wgLang;
 
 		$this->forContent = $forContent;

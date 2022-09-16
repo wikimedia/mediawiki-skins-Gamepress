@@ -28,8 +28,6 @@ class GamepressTemplate extends BaseTemplate {
 			// We explicitly *need* the <p> tags here!
 			$tagline = $this->getMsg( 'tagline' )->parseAsBlock();
 		}
-
-		$this->html( 'headelement' );
 ?>
 <!-- PAGE -->
 <div id="page">
@@ -55,8 +53,8 @@ class GamepressTemplate extends BaseTemplate {
 						$service = new GamepressSkinNavigationService();
 						$menuNodes = $service->parseMessage(
 							'gamepress-navigation',
-							[ 10, 10, 10, 10, 10, 10 ],
-							60 * 60 * 3 // 3 hours
+							60 * 60 * 3, // 3 hours
+							[ 10, 10, 10, 10, 10, 10 ]
 						);
 
 						if ( is_array( $menuNodes ) && isset( $menuNodes[0] ) ) {
@@ -249,9 +247,6 @@ class GamepressTemplate extends BaseTemplate {
 ?>
 </div><!-- END #PAGE -->
 <?php
-		$this->printTrail();
-		echo Html::closeElement( 'body' );
-		echo Html::closeElement( 'html' );
 	} // end of execute() method
 
 	/**
