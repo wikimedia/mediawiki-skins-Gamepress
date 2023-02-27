@@ -63,21 +63,45 @@ class GamepressTemplate extends BaseTemplate {
 								$hasChildren = isset( $menuNodes[$level0]['children'] );
 					?>
 					<li class="page_item<?php echo ( $hasChildren ? ' page_item_has_children' : '' ) ?>">
-						<a class="nav<?php echo $counter ?>_link" href="<?php echo htmlspecialchars( $menuNodes[$level0]['href'], ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $menuNodes[$level0]['text'], ENT_QUOTES ) ?></a>
+						<a class="nav<?php echo $counter ?>_link" href="<?php echo htmlspecialchars( $menuNodes[$level0]['href'], ENT_QUOTES ) ?>">
+							<?php
+								// @note The suppression might be incorrect, (though I doubt it), but regardless of
+								// its presence or absence, phan still complains; so pick your poison,
+								// I guess.
+								// @phan-suppress-next-line SecurityCheck-DoubleEscaped
+								echo htmlspecialchars( $menuNodes[$level0]['text'], ENT_QUOTES )
+							?>
+						</a>
 						<?php if ( $hasChildren ) { ?>
 						<ul class="children">
 <?php
 							foreach ( $menuNodes[$level0]['children'] as $level1 ) {
 ?>
 							<li class="page_item">
-								<a href="<?php echo htmlspecialchars( $menuNodes[$level1]['href'], ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $menuNodes[$level1]['text'], ENT_QUOTES ) ?></a>
+								<a href="<?php echo htmlspecialchars( $menuNodes[$level1]['href'], ENT_QUOTES ) ?>">
+									<?php
+										// @note The suppression might be incorrect, (though I doubt it), but regardless of
+										// its presence or absence, phan still complains; so pick your poison,
+										// I guess.
+										// @phan-suppress-next-line SecurityCheck-DoubleEscaped
+										echo htmlspecialchars( $menuNodes[$level1]['text'], ENT_QUOTES )
+									?>
+								</a>
 <?php
 								if ( isset( $menuNodes[$level1]['children'] ) ) {
 									echo '<ul class="children">';
 									foreach ( $menuNodes[$level1]['children'] as $level2 ) {
 ?>
 									<li class="page_item">
-										<a href="<?php echo htmlspecialchars( $menuNodes[$level2]['href'], ENT_QUOTES ) ?>"><?php echo htmlspecialchars( $menuNodes[$level2]['text'], ENT_QUOTES ) ?></a>
+										<a href="<?php echo htmlspecialchars( $menuNodes[$level2]['href'], ENT_QUOTES ) ?>">
+											<?php
+												// @note The suppression might be incorrect, (though I doubt it), but regardless of
+												// its presence or absence, phan still complains; so pick your poison,
+												// I guess.
+												// @phan-suppress-next-line SecurityCheck-DoubleEscaped
+												echo htmlspecialchars( $menuNodes[$level2]['text'], ENT_QUOTES )
+											?>
+										</a>
 									</li>
 <?php
 									}
@@ -118,8 +142,10 @@ class GamepressTemplate extends BaseTemplate {
 						//<div class="entry-date"><span class="day">17</span><span class="month">Oct</span></div>
 						// For MediaWiki, it doesn't really work for various
 						// reasons, so I just took it off [[for now]].
+						//
+						// Output the [[mw:Help:Page status indicator]]s used by many different things
+						echo $this->getIndicators();
 						?>
-						<?php echo $this->getIndicators(); ?>
 						<div class="entry-header">
 							<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
 						</div>
@@ -254,6 +280,7 @@ class GamepressTemplate extends BaseTemplate {
 	 */
 	protected function renderPortals( $sidebar ) {
 		if ( !isset( $sidebar['SEARCH'] ) ) {
+			// @phan-suppress-next-line PhanTypeMismatchDimAssignment
 			$sidebar['SEARCH'] = true;
 		}
 		if ( !isset( $sidebar['TOOLBOX'] ) ) {
