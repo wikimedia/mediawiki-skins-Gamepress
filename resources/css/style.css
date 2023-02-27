@@ -365,7 +365,6 @@ header #logo p {
 	background-color: #C32420;
 	/* Apparently ResourceLoader is a moron and is unable to resolve the correct
 	path to the image when using the shorthand property...sigh. */
-	/* @embed */
 	background-image: url("../images/nav-red.png");
 	background-position: 0 top;
 	background-repeat: repeat-x;
@@ -417,7 +416,6 @@ header #logo p {
 }
 
 #primary-nav a:hover {
-	/* @embed */
 	background: url("../images/nav-red.png") repeat-x bottom left;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b1211), color-stop(100%,#760509));
 	background: -webkit-linear-gradient(top, #9b1211 0%,#760509 100%);
@@ -556,7 +554,6 @@ header #logo p {
 	padding-top: 20px;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	/* @embed */
 	background: url("../images/submenu-arrow.png") no-repeat bottom left;
 }
 
@@ -571,7 +568,6 @@ header #logo p {
 	padding-top: 20px;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	/* @embed */
 	background: url("../images/submenu-arrow.png") no-repeat bottom right;
 }
 
@@ -585,7 +581,6 @@ header #logo p {
 
 /* Search field */
 #search {
-	/* @embed */
 	background: url(../images/searchbar-bg.png) no-repeat top left;
 	width: 150px;
 	margin: 7px 18px 0 0;

@@ -1,5 +1,4 @@
 body {
-	/* @embed */
 	background: #000 url("../images/body-bg1.png") repeat 0 0;
 	color: #999999;
 	text-shadow: 1px 1px #000000;
@@ -63,7 +62,6 @@ input, textarea, select {
 /*	04.	Header
 /*-----------------------------------------------------------------------------------*/
 #header {
-	/* @embed */
 	background: #393939 url("../images/header-bg.png") repeat-x scroll 0 bottom;
 }
 header #logo h1 a {
@@ -74,7 +72,6 @@ header #logo h1 a {
 /*	05.	Content
 /*-----------------------------------------------------------------------------------*/
 #content-wrapper {
-	/* @embed */
 	background: url("../images/border-solid.png") repeat-x bottom left;
 }
 
@@ -82,7 +79,6 @@ header #logo h1 a {
 /*	06.	Prefooter
 /*-----------------------------------------------------------------------------------*/
 #prefooter {
-	/* @embed */
 	background: url("../images/prefooter-bg.png") repeat scroll 0 0 transparent;
 }
 
@@ -90,10 +86,8 @@ header #logo h1 a {
 /*	07.	Footer
 /*-----------------------------------------------------------------------------------*/
 footer {
-	/* @embed */
 	background: url("../images/footer-bg.png") repeat-x scroll bottom left transparent;
 }
 #footer-border {
-	/* @embed */
 	background: url("../images/border-solid.png") repeat-x bottom left;
 }

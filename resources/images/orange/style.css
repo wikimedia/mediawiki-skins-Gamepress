@@ -5,7 +5,6 @@ article a, a.more {	color: #fa9100; }
 
 /* Main Navigation */
 #header nav {
-	/* @embed */
 	background: #eb861e url("nav-orange.png") repeat-x 0 top;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#eb861e), to(#df5012)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(top, #eb861e, #df5012); /* Chrome 10+, Saf5.1+ */
@@ -24,7 +23,6 @@ article a, a.more {	color: #fa9100; }
 }
 
 #primary-nav a:hover {
-	/* @embed */
 	background: url("nav-orange.png") repeat-x bottom left;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb4b0b), color-stop(100%,#cd3b01));
 	background: -webkit-linear-gradient(top, #eb4b0b 0%,#cd3b01 100%);
@@ -64,7 +62,6 @@ article a, a.more {	color: #fa9100; }
 }
 
 #primary-nav ul a:hover {
-	/* @embed */
 	background: url("nav-orange.png") repeat-x bottom left;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eb4b0b), color-stop(100%,#cd3b01));
 	background: -webkit-linear-gradient(top, #eb4b0b 0%,#cd3b01 100%);
@@ -78,13 +75,11 @@ article a, a.more {	color: #fa9100; }
 
 #primary-nav > li > ul > li:first-child > a:before,
 #primary-nav > li > ul > li:first-child > .before {
-	/* @embed */
 	background: url("submenu-arrow.png") no-repeat bottom left;
 }
 
 #primary-nav ul ul li:first-child > a:before,
 #primary-nav ul ul > li:first-child > .before {
-	/* @embed */
 	background: url("submenu-arrow.png") no-repeat bottom right;
 }
 
