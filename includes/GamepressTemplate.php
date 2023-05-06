@@ -9,6 +9,8 @@
  * @see http://wp-themes.com/gamepress/
  */
 
+use MediaWiki\MediaWikiServices;
+
 class GamepressTemplate extends BaseTemplate {
 	/**
 	 * Template filter callback for the Gamepress skin.
@@ -365,7 +367,7 @@ class GamepressTemplate extends BaseTemplate {
 
 		// Avoid PHP 7.1 warning of passing $this by reference
 		$template = $this;
-		Hooks::run( 'SkinTemplateToolboxEnd', [ &$template, true ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'SkinTemplateToolboxEnd', [ &$template, true ] );
 ?>
 		</ul>
 	</div>
