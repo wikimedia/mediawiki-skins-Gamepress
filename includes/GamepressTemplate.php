@@ -426,5 +426,14 @@ class GamepressTemplate extends BaseTemplate {
 ?>
 	</div>
 <?php
+		// Need this nonsense to support NewsBox in MW 1.39+ using the new hooks (urgh)
+		$content = $this->getSkin()->getAfterPortlet( $bar );
+		if ( $content !== '' ) {
+			echo Html::rawElement(
+				'div',
+				[ 'class' => [ 'after-portlet', 'after-portlet-' . $bar ] ],
+				$content
+			);
+		}
 	}
 }
