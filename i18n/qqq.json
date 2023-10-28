@@ -6,6 +6,7 @@
 			"Umherirrender"
 		]
 	},
+	"gamepress-prefs-talkpage": "{{optional}}\nLink to the skin's talk page on MediaWiki.org; it is shown before the preview link in skin preferences on Special:Preferences. Inspired by [https://phabricator.wikimedia.org/T307113 T307113].",
 	"skinname-gamepress": "{{name}}",
 	"gamepress-desc": "{{desc|what=skin|name=Gamepress|url=https://www.mediawiki.org/wiki/Skin:Gamepress}}",
 	"gamepress-back-to-top": "Text for a link in the footer of each page\n{{Identical|Back to top}}",
