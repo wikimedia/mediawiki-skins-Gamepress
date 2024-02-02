@@ -52,7 +52,7 @@
 	},
 	"ResourceModules": {
 		"skins.gamepress.styles": {
-			"class": "ResourceLoaderSkinModule",
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
 				"content-media": true,
 				"content-links": true,
