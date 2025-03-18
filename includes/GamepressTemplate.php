@@ -9,6 +9,8 @@
  * @see http://wp-themes.com/gamepress/
  */
 
+use MediaWiki\Html\Html;
+use MediaWiki\Linker\Linker;
 use MediaWiki\MediaWikiServices;
 
 class GamepressTemplate extends BaseTemplate {
