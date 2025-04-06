@@ -25,7 +25,7 @@ class GamepressTemplate extends BaseTemplate {
 
 		$skin = $this->getSkin();
 
-		$this->data['pageLanguage'] = $skin->getTitle()->getPageViewLanguage()->getHtmlCode();
+		$this->data['pageLanguage'] = $skin->getTitle()->getPageLanguage()->getHtmlCode();
 
 		$tagline = '';
 		if ( !$this->getMsg( 'tagline' )->isDisabled() ) {
