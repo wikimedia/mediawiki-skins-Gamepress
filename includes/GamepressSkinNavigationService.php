@@ -51,7 +51,6 @@ class GamepressSkinNavigationService {
 				// Phan *really* has a thing for $cacheKey below, eh
 				// @phan-suppress-next-line PhanPossiblyUndeclaredVariable
 				$cache->set( $cacheKey, $nodes, $duration );
-				// @phan-suppress-previous-line PhanTypeMismatchArgumentNullable
 			}
 		}
 
@@ -119,6 +118,7 @@ class GamepressSkinNavigationService {
 					$node['parentIndex'] = $parentIndex;
 					$node['depth'] = $depth;
 
+					// @phan-suppress-next-line PhanTypeMismatchDimAssignment
 					$nodes[$node['parentIndex']]['children'][] = $i + 1;
 					$nodes[$i + 1] = $node;
 					$lastDepth = $node['depth'];
