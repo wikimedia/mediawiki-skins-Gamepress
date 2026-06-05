@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"HakanIST"
 		]
 	},
+	"gamepress-prefs-talkpage": "[[mw:Skin talk:Gamepress|{{int:talk}}]]",
+	"skinname-gamepress": "Gamepress",
 	"gamepress-desc": "Kullanımı kolay, oyun odaklı görünüm",
 	"gamepress-back-to-top": "Başa dön &uarr;",
 	"gamepress-jump-to-navigation": "Gezinti kısmına atla",
