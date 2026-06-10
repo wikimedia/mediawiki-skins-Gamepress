@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"gamepress-prefs-talkpage": "[[mw:Skin talk:Gamepress|{{int:talk}}]]",
+	"skinname-gamepress": "Gamepress",
+	"gamepress-desc": "Jednoducho použiteľná téma vzhľadu zameraná na hry",
+	"gamepress-back-to-top": "Späť na začiatok &uarr;",
+	"gamepress-jump-to-navigation": "Skočiť na navigáciu",
+	"gamepress-jump-to-search": "Skočiť na vyhľadávanie"
+}
