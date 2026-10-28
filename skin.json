@@ -13,7 +13,7 @@
 	"descriptionmsg": "gamepress-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.43.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"gamepress": {
@@ -23,6 +23,16 @@
 					"name": "gamepress",
 					"bodyOnly": true,
 					"template": "GamepressTemplate",
+					"menus": [
+						"user-page",
+						"user-interface-preferences",
+						"notifications",
+						"user-menu",
+						"associated-pages",
+						"views",
+						"actions",
+						"variants"
+					],
 					"responsive": true,
 					"styles": [
 						"skins.gamepress.styles"
